@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/admin-style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="welcome-section">Welcome username</div>
+        <div class="middle"><h1>Admin Section</h1></div>
+        <div class="logout"><button class="admin-logout">logout</button></div>
+      </div>
+    </nav>
+    <section class="admin-list-container">
+      <table class="admin-list">
+        <thead id="table-head">
+          <tr>
+            <td>
+              <h3>
+                <button class="del-sel">Delete selected</button>
+                <input type="checkbox" name="all" />
+              </h3>
+            </td>
+            <td><h2>name</h2></td>
+            <td><h2>email</h2></td>
+            <td><h2>role</h2></td>
+            <td><h2>actions</h2></td>
+          </tr>
+        </thead>
+        <tbody class="table-body"></tbody>
+      </table>
+    </section>
+    <script src="assets/script/app.js"></script>
+  </body>
+</html>

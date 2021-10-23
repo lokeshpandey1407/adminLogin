@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 80px;
+  width: 98vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: lightsteelblue;
+}
+
+.admin-logout {
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.admin-logout:hover {
+  background-color: #333;
+  color: wheat;
+  transform: translateY(2px);
+}
+
+.del-sel {
+  border: 1px solid black;
+  letter-spacing: 1.2px;
+  padding: 0.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-list {
+  margin: 1rem auto;
+  text-align: center;
+  width: 150px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr > td {
+  min-width: 180px;
+}
+
+.admin-list thead {
+  border: none;
+  text-transform: uppercase;
+  font-family: monospace;
+  background-color: lightsteelblue;
+}
+
+.del-btn {
+  background-color: turquoise;
+  color: white;
+  border: 1px solid white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.del-btn:hover {
+  background-color: crimson;
+  transform: scale(1.1);
+}
+
+.admin-list tbody {
+  font-family: monospace;
+}
