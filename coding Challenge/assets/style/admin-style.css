@@ -5,7 +5,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 0 2rem;
+  padding: 0 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,8 @@ body {
   transition: 0.3s all linear;
 }
 
-.admin-logout:hover {
+.admin-logout:hover,
+.del-sel:hover {
   background-color: #333;
   color: wheat;
   transform: translateY(2px);
@@ -44,6 +45,7 @@ body {
   padding: 0.3rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s all linear;
 }
 
 .admin-list {
@@ -54,6 +56,10 @@ body {
   border-collapse: collapse;
 }
 
+.checkbox {
+  cursor: pointer;
+}
+
 tr > td {
   min-width: 180px;
 }
@@ -61,6 +67,7 @@ tr > td {
 .admin-list thead {
   border: none;
   text-transform: uppercase;
+  font-size: 0.8rem;
   font-family: monospace;
   background-color: lightsteelblue;
 }
@@ -81,4 +88,25 @@ tr > td {
 
 .admin-list tbody {
   font-family: monospace;
+}
+
+.alert-modal {
+  height: 35px;
+  text-align: center;
+  opacity: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 150px;
+  color: white;
+  background-color: rgb(226, 123, 144);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.3rem 0.3rem;
+  letter-spacing: 1.2px;
 }

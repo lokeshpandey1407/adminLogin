@@ -10,7 +10,7 @@
   <body>
     <nav>
       <div class="navbar">
-        <div class="welcome-section">Welcome username</div>
+        <div class="welcome-section"></div>
         <div class="middle"><h1>Admin Section</h1></div>
         <div class="logout"><button class="admin-logout">logout</button></div>
       </div>
@@ -21,8 +21,8 @@
           <tr>
             <td>
               <h3>
-                <button class="del-sel">Delete selected</button>
-                <input type="checkbox" name="all" />
+                <p>Select All</p>
+                <input class="checkbox" type="checkbox" name="all" />
               </h3>
             </td>
             <td><h2>name</h2></td>
@@ -34,6 +34,8 @@
         <tbody class="table-body"></tbody>
       </table>
     </section>
-    <script src="assets/script/app.js"></script>
+    <button class="del-sel">Delete selected</button>
+    <div class="alert-modal"></div>
+    <script src="assets/script/adminUser.js"></script>
   </body>
 </html>
